@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.body{
+    background: url("../background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(yellow,green);
+    width: 90vmin;
+    height: 90vmin;
+    border: 7px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns:  repeat(18,1fr);
+    
+
+}
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid plum;
+    transform: scale(1.02);
+    border-radius: 8px;
+
+
+}
+
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.snake{
+    background-color: lightcoral;
+    border: .50vmin solid black;
+    border-radius: 12px;
+}
+
+.food{
+    background-color: purple;
+    border-radius: 10px;
+}
+
